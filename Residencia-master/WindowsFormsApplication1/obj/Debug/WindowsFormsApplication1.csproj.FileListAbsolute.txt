@@ -1,0 +1,16 @@
+c:\users\cuervo\documents\visual studio 2012\Projects\Proyecto\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.MenuPrincipal.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Provañadir.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Proveliminar.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Provmodificar.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Almentradas.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Provver.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Almsalidas.resources
