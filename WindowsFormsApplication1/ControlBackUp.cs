@@ -10,28 +10,31 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Almsalidas : Form
+    public partial class ControlBackUp : Form
     {
-        public Almsalidas()
+        public ControlBackUp()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Destino_Click(object sender, EventArgs e)
         {
-            MenuPrincipal salid = new MenuPrincipal();
-            salid.Show();
-            this.Hide();
+
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
-           
+
         }
 
-        private void Almsalidas_Load(object sender, EventArgs e)
+        private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void button2_Click(object sender, EventArgs e)

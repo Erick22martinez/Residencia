@@ -10,35 +10,36 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Almsalidas : Form
+    public partial class Form2 : Form
     {
-        public Almsalidas()
+        public Form2()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            MenuPrincipal salid = new MenuPrincipal();
-            salid.Show();
-            this.Hide();
-        }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void Almsalidas_Load(object sender, EventArgs e)
-        {
-            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Provañadir ana = new Provañadir();
+            ana.Show();
+            this.Hide();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
             MenuPrincipal saliraña = new MenuPrincipal();
             saliraña.Show();
             this.Hide();
+           
         }
     }
 }

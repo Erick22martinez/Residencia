@@ -10,28 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Almsalidas : Form
+    public partial class ControlRestore : Form
     {
-        public Almsalidas()
+        public ControlRestore()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MenuPrincipal salid = new MenuPrincipal();
-            salid.Show();
-            this.Hide();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void Almsalidas_Load(object sender, EventArgs e)
-        {
-            
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -23,5 +23,10 @@ namespace WindowsFormsApplication1
             entr.Show();
             this.Hide();
         }
+
+        private void Almentradas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

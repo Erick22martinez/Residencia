@@ -112,14 +112,14 @@
             // 
             this.textBox9.Location = new System.Drawing.Point(132, 229);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.Size = new System.Drawing.Size(188, 20);
             this.textBox9.TabIndex = 36;
             // 
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(132, 184);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.Size = new System.Drawing.Size(302, 20);
             this.textBox8.TabIndex = 35;
             // 
             // textBox7
@@ -272,6 +272,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Almentradas";
             this.Text = "Almentradas";
+            this.Load += new System.EventHandler(this.Almentradas_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

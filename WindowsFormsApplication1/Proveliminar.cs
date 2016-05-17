@@ -16,5 +16,19 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void Proveliminar_Load(object sender, EventArgs e)
+        {
+            MenuPrincipal ini = new MenuPrincipal();
+            ini.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal saliraña = new MenuPrincipal();
+            saliraña.Show();
+            this.Hide();
+        }
     }
 }

@@ -10,28 +10,18 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Provver : Form
+    public partial class Form3 : Form
     {
-        public Provver()
+        public Form3()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             MenuPrincipal saliraña = new MenuPrincipal();
             saliraña.Show();
             this.Hide();
-        }
-
-        private void Provver_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -10,27 +10,17 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Provmodificar : Form
+    public partial class DeleteUser : Form
     {
-        public Provmodificar()
+        public DeleteUser()
         {
             InitializeComponent();
         }
 
-        private void Provmodificar_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            MenuPrincipal ini = new MenuPrincipal();
-            ini.Show();
+            MenuPrincipal saliraña = new MenuPrincipal();
+            saliraña.Show();
             this.Hide();
         }
     }

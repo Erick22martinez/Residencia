@@ -56,17 +56,65 @@
     <Compile Include="Almsalidas.Designer.cs">
       <DependentUpon>Almsalidas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Changeuser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Changeuser.Designer.cs">
+      <DependentUpon>Changeuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlBackUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlBackUp.Designer.cs">
+      <DependentUpon>ControlBackUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlRestore.Designer.cs">
+      <DependentUpon>ControlRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteUser.Designer.cs">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlmStockAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlmStockAlmacen.Designer.cs">
+      <DependentUpon>AlmStockAlmacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlmStockSubAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlmStockSubAlmacen.Designer.cs">
+      <DependentUpon>AlmStockSubAlmacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModUser.Designer.cs">
+      <DependentUpon>ModUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -94,17 +142,50 @@
     <Compile Include="Provver.Designer.cs">
       <DependentUpon>Provver.cs</DependentUpon>
     </Compile>
+    <Compile Include="superprovedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="superprovedor.Designer.cs">
+      <DependentUpon>superprovedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewUser.Designer.cs">
+      <DependentUpon>ViewUser.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Almentradas.resx">
       <DependentUpon>Almentradas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Almsalidas.resx">
       <DependentUpon>Almsalidas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AlmStockAlmacen.resx">
+      <DependentUpon>AlmStockAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlmStockSubAlmacen.resx">
+      <DependentUpon>AlmStockSubAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlBackUp.resx">
+      <DependentUpon>ControlBackUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlRestore.resx">
+      <DependentUpon>ControlRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUser.resx">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModUser.resx">
+      <DependentUpon>ModUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -127,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Provver.resx">
       <DependentUpon>Provver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewUser.resx">
+      <DependentUpon>ViewUser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
