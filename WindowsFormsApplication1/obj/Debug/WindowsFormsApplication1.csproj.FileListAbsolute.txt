@@ -54,3 +54,27 @@ C:\Users\francisco\Desktop\ITNL 9 Semestre\Residencia Profesional\Nueva carpeta\
 C:\Users\francisco\Desktop\ITNL 9 Semestre\Residencia Profesional\Nueva carpeta\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ViewUser.resources
 C:\Users\francisco\Desktop\ITNL 9 Semestre\Residencia Profesional\Nueva carpeta\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ControlBackUp.resources
 C:\Users\francisco\Desktop\ITNL 9 Semestre\Residencia Profesional\Nueva carpeta\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ControlRestore.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Almentradas.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Almsalidas.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form2.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form3.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ControlBackUp.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ControlRestore.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.DeleteUser.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form4.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.MenuPrincipal.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ModUser.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Provañadir.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Proveliminar.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Provmodificar.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Provver.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ViewUser.resources
+C:\Users\Cuervo\Documents\Visual Studio 2012\Projects\Proyecto\Residencia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache

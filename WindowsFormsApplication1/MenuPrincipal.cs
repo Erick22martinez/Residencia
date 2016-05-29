@@ -158,7 +158,7 @@ namespace WindowsFormsApplication1
 
         private void cambioDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Changeuser eli = new Changeuser();
+            Form1 eli = new Form1();
             eli.Show();
             this.Hide();
         }

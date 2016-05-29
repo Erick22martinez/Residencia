@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApplication1
 {
@@ -24,10 +25,38 @@ namespace WindowsFormsApplication1
 
         private void btningresar_Click(object sender, EventArgs e)
         {
-            MenuPrincipal frm = new MenuPrincipal();
-            frm.Show();
-            this.Hide();
+            registro();
             
+        }
+
+        public void registro()
+        {
+            SqlConnection conexion = new SqlConnection("Data Source=(localdb)\\v11.0;Initial Catalog=Residencia;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+
+            conexion.Open();
+
+            SqlCommand consulta = new SqlCommand("select * from Usuario where usuario='" + txtuser.Text + "' and contraseña='" + txtcontra.Text + "'", conexion);
+
+            SqlDataReader ejecutar = consulta.ExecuteReader();
+
+            if (ejecutar.Read() == true)
+            {
+                MessageBox.Show("Bienvenido " + txtuser.Text);
+                this.Hide();
+
+                MenuPrincipal frm = new MenuPrincipal();
+                frm.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("Datos incorrectos");
+                txtuser.Clear();
+                txtcontra.Clear();
+                txtuser.Focus();
+
+                conexion.Close();
+            }
         }
     }
 }

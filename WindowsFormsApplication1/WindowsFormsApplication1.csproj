@@ -124,6 +124,7 @@
     <Compile Include="Provañadir.Designer.cs">
       <DependentUpon>Provañadir.cs</DependentUpon>
     </Compile>
+    <Compile Include="Proveedor.cs" />
     <Compile Include="Proveliminar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +149,7 @@
     <Compile Include="superprovedor.Designer.cs">
       <DependentUpon>superprovedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usuario.cs" />
     <Compile Include="ViewUser.cs">
       <SubType>Form</SubType>
     </Compile>

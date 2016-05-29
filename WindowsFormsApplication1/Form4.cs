@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApplication1
 {
@@ -33,5 +34,21 @@ namespace WindowsFormsApplication1
             saliraña.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtcontraseña.Text == txtconfirmar.Text)
+                
+            {
+                if (Usuario.CrearCuentas(txtnombre.Text, txtape.Text, txtusuario.Text, txtcorreo.Text, txtcontraseña.Text, txtcodigo.Text) > 0)
+                {
+                    MessageBox.Show("Usuario Agregado");
+                }
+            }
+            else
+
+                MessageBox.Show("Error verificar datos");
+        }
+        }
     }
-}
+

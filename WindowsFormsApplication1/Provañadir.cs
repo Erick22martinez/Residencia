@@ -25,5 +25,17 @@ namespace WindowsFormsApplication1
            
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Proveedor.CrearProve(txtclave.Text, txtnombre.Text, txtcalle.Text, txtnum.Text, txtcol.Text, txtmun.Text, txtcp.Text, txtestado.Text, txttel.Text, txtmovil.Text, txtrfc.Text, txtcontacto.Text) > 0)
+            {
+                MessageBox.Show("Proveedor Agregado");
+            }
+            else
+            {
+                MessageBox.Show("Faltan datos");
+            }
+        }
     }
 }
