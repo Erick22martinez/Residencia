@@ -28,5 +28,17 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Inventario.CrearInven(txtcodigo.Text,txtfecha.Text,txtproveedor.Text,txtconcepto.Text,txtfactura.Text,txtcantidad.Text,txtdescripcion.Text,txtnombre.Text,txtpresentacion.Text,txtprecio.Text,txtsustancia.Text,txtlab.Text,txtlote.Text,txtcadu.Text) > 0)
+            {
+                MessageBox.Show("Producto Agregado");
+            }
+            else
+            {
+                MessageBox.Show("Faltan datos");
+            }
+        }
     }
 }

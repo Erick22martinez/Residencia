@@ -28,46 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Clave_Prov = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre_Prov = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Eliminar_Prov = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.proveedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.residenciaDataSet1 = new WindowsFormsApplication1.ResidenciaDataSet1();
             this.button1 = new System.Windows.Forms.Button();
+            this.proveedorTableAdapter = new WindowsFormsApplication1.ResidenciaDataSet1TableAdapters.ProveedorTableAdapter();
+            this.clave = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proveedorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.residenciaDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Clave_Prov,
-            this.Nombre_Prov,
-            this.Eliminar_Prov});
+            this.clave,
+            this.Nombre,
+            this.Eliminar});
+            this.dataGridView1.DataSource = this.proveedorBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(445, 154);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // Clave_Prov
+            // proveedorBindingSource
             // 
-            this.Clave_Prov.HeaderText = "Clave";
-            this.Clave_Prov.Name = "Clave_Prov";
+            this.proveedorBindingSource.DataMember = "Proveedor";
+            this.proveedorBindingSource.DataSource = this.residenciaDataSet1;
             // 
-            // Nombre_Prov
+            // residenciaDataSet1
             // 
-            this.Nombre_Prov.HeaderText = "Nombre";
-            this.Nombre_Prov.Name = "Nombre_Prov";
-            this.Nombre_Prov.Width = 250;
-            // 
-            // Eliminar_Prov
-            // 
-            this.Eliminar_Prov.HeaderText = "Eliminar";
-            this.Eliminar_Prov.Name = "Eliminar_Prov";
-            this.Eliminar_Prov.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Eliminar_Prov.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Eliminar_Prov.Text = "Delete";
-            this.Eliminar_Prov.ToolTipText = "Delete";
-            this.Eliminar_Prov.Width = 50;
+            this.residenciaDataSet1.DataSetName = "ResidenciaDataSet1";
+            this.residenciaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button1
             // 
@@ -78,6 +77,33 @@
             this.button1.Text = "Salir";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // proveedorTableAdapter
+            // 
+            this.proveedorTableAdapter.ClearBeforeFill = true;
+            // 
+            // clave
+            // 
+            this.clave.DataPropertyName = "clave";
+            this.clave.Frozen = true;
+            this.clave.HeaderText = "clave";
+            this.clave.Name = "clave";
+            // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "Nombre";
+            this.Nombre.Frozen = true;
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.Frozen = true;
+            this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
+            this.Eliminar.Text = "Eliminar";
+            this.Eliminar.UseColumnTextForButtonValue = true;
             // 
             // Proveliminar
             // 
@@ -90,6 +116,8 @@
             this.Text = "Proveliminar";
             this.Load += new System.EventHandler(this.Proveliminar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proveedorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.residenciaDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -98,8 +126,11 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Clave_Prov;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_Prov;
-        private System.Windows.Forms.DataGridViewButtonColumn Eliminar_Prov;
+        private ResidenciaDataSet1 residenciaDataSet1;
+        private System.Windows.Forms.BindingSource proveedorBindingSource;
+        private ResidenciaDataSet1TableAdapters.ProveedorTableAdapter proveedorTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clave;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewButtonColumn Eliminar;
     }
 }

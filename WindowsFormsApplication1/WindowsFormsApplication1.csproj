@@ -56,12 +56,6 @@
     <Compile Include="Almsalidas.Designer.cs">
       <DependentUpon>Almsalidas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Changeuser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Changeuser.Designer.cs">
-      <DependentUpon>Changeuser.cs</DependentUpon>
-    </Compile>
     <Compile Include="ControlBackUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +98,7 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventario.cs" />
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +137,21 @@
     </Compile>
     <Compile Include="Provver.Designer.cs">
       <DependentUpon>Provver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResidenciaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResidenciaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResidenciaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResidenciaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResidenciaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResidenciaDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="superprovedor.cs">
       <SubType>Form</SubType>
@@ -228,6 +238,39 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ResidenciaDataSet.xsc">
+      <DependentUpon>ResidenciaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ResidenciaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResidenciaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResidenciaDataSet.xss">
+      <DependentUpon>ResidenciaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ResidenciaDataSet1.xsc">
+      <DependentUpon>ResidenciaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ResidenciaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResidenciaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResidenciaDataSet1.xss">
+      <DependentUpon>ResidenciaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ResidenciaDataSet2.xsc">
+      <DependentUpon>ResidenciaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ResidenciaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResidenciaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResidenciaDataSet2.xss">
+      <DependentUpon>ResidenciaDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Resources\images.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

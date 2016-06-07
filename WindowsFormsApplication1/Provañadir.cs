@@ -37,5 +37,22 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("Faltan datos");
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txtnombre.Text = "";
+            txtnum.Text = "";
+            txtcalle.Text = "";
+            txtclave.Text = "";
+            txtcol.Text = "";
+            txtcontacto.Text = "";
+            txtcp.Text = "";
+            txtestado.Text = "";
+            txtmovil.Text = "";
+            txtmun.Text = "";
+            txtrfc.Text = "";
+            txttel.Text = "";
+            txtclave.Focus();
+        }
     }
 }

@@ -29,18 +29,26 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtcadu = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtlote = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtlab = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtsustancia = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtprecio = new System.Windows.Forms.TextBox();
+            this.txtpresentacion = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.txtdescripcion = new System.Windows.Forms.TextBox();
+            this.txtcantidad = new System.Windows.Forms.TextBox();
+            this.txtcodigo = new System.Windows.Forms.TextBox();
+            this.txtfactura = new System.Windows.Forms.TextBox();
+            this.txtproveedor = new System.Windows.Forms.TextBox();
+            this.txtconcepto = new System.Windows.Forms.TextBox();
+            this.txtfecha = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -56,18 +64,26 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtcadu);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.txtlote);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.txtlab);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.txtsustancia);
+            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox10);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtprecio);
+            this.groupBox1.Controls.Add(this.txtpresentacion);
+            this.groupBox1.Controls.Add(this.txtnombre);
+            this.groupBox1.Controls.Add(this.txtdescripcion);
+            this.groupBox1.Controls.Add(this.txtcantidad);
+            this.groupBox1.Controls.Add(this.txtcodigo);
+            this.groupBox1.Controls.Add(this.txtfactura);
+            this.groupBox1.Controls.Add(this.txtproveedor);
+            this.groupBox1.Controls.Add(this.txtconcepto);
+            this.groupBox1.Controls.Add(this.txtfecha);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
@@ -78,15 +94,79 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 24);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(486, 314);
+            this.groupBox1.Size = new System.Drawing.Size(486, 359);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
             // 
+            // txtcadu
+            // 
+            this.txtcadu.Location = new System.Drawing.Point(367, 248);
+            this.txtcadu.Name = "txtcadu";
+            this.txtcadu.Size = new System.Drawing.Size(100, 20);
+            this.txtcadu.TabIndex = 47;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(265, 256);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(58, 13);
+            this.label13.TabIndex = 46;
+            this.label13.Text = "Caducidad";
+            // 
+            // txtlote
+            // 
+            this.txtlote.Location = new System.Drawing.Point(367, 219);
+            this.txtlote.Name = "txtlote";
+            this.txtlote.Size = new System.Drawing.Size(100, 20);
+            this.txtlote.TabIndex = 45;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(265, 226);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(28, 13);
+            this.label14.TabIndex = 44;
+            this.label14.Text = "Lote";
+            // 
+            // txtlab
+            // 
+            this.txtlab.Location = new System.Drawing.Point(132, 248);
+            this.txtlab.Name = "txtlab";
+            this.txtlab.Size = new System.Drawing.Size(100, 20);
+            this.txtlab.TabIndex = 43;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(30, 256);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(60, 13);
+            this.label12.TabIndex = 42;
+            this.label12.Text = "Laboratorio";
+            // 
+            // txtsustancia
+            // 
+            this.txtsustancia.Location = new System.Drawing.Point(132, 219);
+            this.txtsustancia.Name = "txtsustancia";
+            this.txtsustancia.Size = new System.Drawing.Size(100, 20);
+            this.txtsustancia.TabIndex = 41;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(30, 226);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(87, 13);
+            this.label11.TabIndex = 40;
+            this.label11.Text = "Sustancia Activa";
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(30, 273);
+            this.label10.Location = new System.Drawing.Point(30, 330);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(37, 13);
             this.label10.TabIndex = 39;
@@ -95,81 +175,81 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(30, 236);
+            this.label9.Location = new System.Drawing.Point(30, 293);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(69, 13);
             this.label9.TabIndex = 38;
             this.label9.Text = "Presentacion";
             // 
-            // textBox10
+            // txtprecio
             // 
-            this.textBox10.Location = new System.Drawing.Point(132, 266);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 37;
+            this.txtprecio.Location = new System.Drawing.Point(132, 323);
+            this.txtprecio.Name = "txtprecio";
+            this.txtprecio.Size = new System.Drawing.Size(100, 20);
+            this.txtprecio.TabIndex = 37;
             // 
-            // textBox9
+            // txtpresentacion
             // 
-            this.textBox9.Location = new System.Drawing.Point(132, 229);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(188, 20);
-            this.textBox9.TabIndex = 36;
+            this.txtpresentacion.Location = new System.Drawing.Point(132, 286);
+            this.txtpresentacion.Name = "txtpresentacion";
+            this.txtpresentacion.Size = new System.Drawing.Size(188, 20);
+            this.txtpresentacion.TabIndex = 36;
             // 
-            // textBox8
+            // txtnombre
             // 
-            this.textBox8.Location = new System.Drawing.Point(132, 184);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(302, 20);
-            this.textBox8.TabIndex = 35;
+            this.txtnombre.Location = new System.Drawing.Point(132, 184);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(302, 20);
+            this.txtnombre.TabIndex = 35;
             // 
-            // textBox7
+            // txtdescripcion
             // 
-            this.textBox7.Location = new System.Drawing.Point(132, 140);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(302, 20);
-            this.textBox7.TabIndex = 34;
+            this.txtdescripcion.Location = new System.Drawing.Point(132, 140);
+            this.txtdescripcion.Name = "txtdescripcion";
+            this.txtdescripcion.Size = new System.Drawing.Size(302, 20);
+            this.txtdescripcion.TabIndex = 34;
             // 
-            // textBox6
+            // txtcantidad
             // 
-            this.textBox6.Location = new System.Drawing.Point(334, 101);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 33;
+            this.txtcantidad.Location = new System.Drawing.Point(334, 101);
+            this.txtcantidad.Name = "txtcantidad";
+            this.txtcantidad.Size = new System.Drawing.Size(100, 20);
+            this.txtcantidad.TabIndex = 33;
             // 
-            // textBox5
+            // txtcodigo
             // 
-            this.textBox5.Location = new System.Drawing.Point(132, 101);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 32;
+            this.txtcodigo.Location = new System.Drawing.Point(132, 101);
+            this.txtcodigo.Name = "txtcodigo";
+            this.txtcodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtcodigo.TabIndex = 32;
             // 
-            // textBox4
+            // txtfactura
             // 
-            this.textBox4.Location = new System.Drawing.Point(334, 60);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 31;
+            this.txtfactura.Location = new System.Drawing.Point(334, 60);
+            this.txtfactura.Name = "txtfactura";
+            this.txtfactura.Size = new System.Drawing.Size(100, 20);
+            this.txtfactura.TabIndex = 31;
             // 
-            // textBox3
+            // txtproveedor
             // 
-            this.textBox3.Location = new System.Drawing.Point(132, 64);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 30;
+            this.txtproveedor.Location = new System.Drawing.Point(132, 64);
+            this.txtproveedor.Name = "txtproveedor";
+            this.txtproveedor.Size = new System.Drawing.Size(100, 20);
+            this.txtproveedor.TabIndex = 30;
             // 
-            // textBox2
+            // txtconcepto
             // 
-            this.textBox2.Location = new System.Drawing.Point(334, 28);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 29;
+            this.txtconcepto.Location = new System.Drawing.Point(334, 28);
+            this.txtconcepto.Name = "txtconcepto";
+            this.txtconcepto.Size = new System.Drawing.Size(100, 20);
+            this.txtconcepto.TabIndex = 29;
             // 
-            // textBox1
+            // txtfecha
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 28;
+            this.txtfecha.Location = new System.Drawing.Point(132, 28);
+            this.txtfecha.Name = "txtfecha";
+            this.txtfecha.Size = new System.Drawing.Size(100, 20);
+            this.txtfecha.TabIndex = 28;
             // 
             // label8
             // 
@@ -245,16 +325,17 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(57, 344);
+            this.button1.Location = new System.Drawing.Point(45, 413);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 21;
             this.button1.Text = "Añadir";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(233, 344);
+            this.button2.Location = new System.Drawing.Point(231, 413);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 22;
@@ -266,7 +347,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 391);
+            this.ClientSize = new System.Drawing.Size(570, 448);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
@@ -284,16 +365,16 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtprecio;
+        private System.Windows.Forms.TextBox txtpresentacion;
+        private System.Windows.Forms.TextBox txtnombre;
+        private System.Windows.Forms.TextBox txtdescripcion;
+        private System.Windows.Forms.TextBox txtcantidad;
+        private System.Windows.Forms.TextBox txtcodigo;
+        private System.Windows.Forms.TextBox txtfactura;
+        private System.Windows.Forms.TextBox txtproveedor;
+        private System.Windows.Forms.TextBox txtconcepto;
+        private System.Windows.Forms.TextBox txtfecha;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -304,5 +385,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtcadu;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtlote;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtlab;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtsustancia;
+        private System.Windows.Forms.Label label11;
     }
 }

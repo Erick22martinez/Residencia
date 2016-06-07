@@ -28,26 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.proveedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.residenciaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.residenciaDataSet = new WindowsFormsApplication1.ResidenciaDataSet();
             this.button1 = new System.Windows.Forms.Button();
-            this.Clave = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre_prov = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Editar_Prov = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.proveedorTableAdapter = new WindowsFormsApplication1.ResidenciaDataSetTableAdapters.ProveedorTableAdapter();
+            this.claveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Calle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Colonia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Municipio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Movil = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RFC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Contacto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Editar = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proveedorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.residenciaDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.residenciaDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Clave,
-            this.Nombre_prov,
-            this.Editar_Prov});
+            this.claveDataGridViewTextBoxColumn,
+            this.nombreDataGridViewTextBoxColumn,
+            this.Calle,
+            this.Numero,
+            this.Colonia,
+            this.Municipio,
+            this.CP,
+            this.Estado,
+            this.Telefono,
+            this.Movil,
+            this.RFC,
+            this.Contacto,
+            this.Editar});
+            this.dataGridView1.DataSource = this.proveedorBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(437, 145);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // proveedorBindingSource
+            // 
+            this.proveedorBindingSource.DataMember = "Proveedor";
+            this.proveedorBindingSource.DataSource = this.residenciaDataSetBindingSource;
+            // 
+            // residenciaDataSetBindingSource
+            // 
+            this.residenciaDataSetBindingSource.DataSource = this.residenciaDataSet;
+            this.residenciaDataSetBindingSource.Position = 0;
+            // 
+            // residenciaDataSet
+            // 
+            this.residenciaDataSet.DataSetName = "ResidenciaDataSet";
+            this.residenciaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button1
             // 
@@ -59,25 +105,90 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Clave
+            // proveedorTableAdapter
             // 
-            this.Clave.HeaderText = "clave";
-            this.Clave.Name = "Clave";
+            this.proveedorTableAdapter.ClearBeforeFill = true;
             // 
-            // Nombre_prov
+            // claveDataGridViewTextBoxColumn
             // 
-            this.Nombre_prov.HeaderText = "Nombre";
-            this.Nombre_prov.Name = "Nombre_prov";
-            this.Nombre_prov.Width = 250;
+            this.claveDataGridViewTextBoxColumn.DataPropertyName = "clave";
+            this.claveDataGridViewTextBoxColumn.HeaderText = "clave";
+            this.claveDataGridViewTextBoxColumn.Name = "claveDataGridViewTextBoxColumn";
             // 
-            // Editar_Prov
+            // nombreDataGridViewTextBoxColumn
             // 
-            this.Editar_Prov.HeaderText = "Editar";
-            this.Editar_Prov.Name = "Editar_Prov";
-            this.Editar_Prov.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Editar_Prov.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Editar_Prov.Text = "Edit";
-            this.Editar_Prov.Width = 40;
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            // 
+            // Calle
+            // 
+            this.Calle.DataPropertyName = "Calle";
+            this.Calle.HeaderText = "Calle";
+            this.Calle.Name = "Calle";
+            // 
+            // Numero
+            // 
+            this.Numero.DataPropertyName = "Numero";
+            this.Numero.HeaderText = "Numero";
+            this.Numero.Name = "Numero";
+            // 
+            // Colonia
+            // 
+            this.Colonia.DataPropertyName = "Colonia";
+            this.Colonia.HeaderText = "Colonia";
+            this.Colonia.Name = "Colonia";
+            // 
+            // Municipio
+            // 
+            this.Municipio.DataPropertyName = "Municipio";
+            this.Municipio.HeaderText = "Municipio";
+            this.Municipio.Name = "Municipio";
+            // 
+            // CP
+            // 
+            this.CP.DataPropertyName = "CP";
+            this.CP.HeaderText = "CP";
+            this.CP.Name = "CP";
+            // 
+            // Estado
+            // 
+            this.Estado.DataPropertyName = "Estado";
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
+            // 
+            // Telefono
+            // 
+            this.Telefono.DataPropertyName = "Telefono";
+            this.Telefono.HeaderText = "Telefono";
+            this.Telefono.Name = "Telefono";
+            // 
+            // Movil
+            // 
+            this.Movil.DataPropertyName = "Movil";
+            this.Movil.HeaderText = "Movil";
+            this.Movil.Name = "Movil";
+            // 
+            // RFC
+            // 
+            this.RFC.DataPropertyName = "RFC";
+            this.RFC.HeaderText = "RFC";
+            this.RFC.Name = "RFC";
+            // 
+            // Contacto
+            // 
+            this.Contacto.DataPropertyName = "Contacto";
+            this.Contacto.HeaderText = "Contacto";
+            this.Contacto.Name = "Contacto";
+            // 
+            // Editar
+            // 
+            this.Editar.HeaderText = "Editar";
+            this.Editar.Name = "Editar";
+            this.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Editar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Editar.Text = "Editar";
+            this.Editar.UseColumnTextForButtonValue = true;
             // 
             // Provmodificar
             // 
@@ -90,6 +201,9 @@
             this.Text = "Provmodificar";
             this.Load += new System.EventHandler(this.Provmodificar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proveedorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.residenciaDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.residenciaDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -98,8 +212,22 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Clave;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_prov;
-        private System.Windows.Forms.DataGridViewButtonColumn Editar_Prov;
+        private System.Windows.Forms.BindingSource residenciaDataSetBindingSource;
+        private ResidenciaDataSet residenciaDataSet;
+        private System.Windows.Forms.BindingSource proveedorBindingSource;
+        private ResidenciaDataSetTableAdapters.ProveedorTableAdapter proveedorTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn claveDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Calle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Colonia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Municipio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Movil;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RFC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Contacto;
+        private System.Windows.Forms.DataGridViewButtonColumn Editar;
     }
 }

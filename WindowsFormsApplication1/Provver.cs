@@ -31,6 +31,8 @@ namespace WindowsFormsApplication1
 
         private void Provver_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'residenciaDataSet.Proveedor' Puede moverla o quitarla según sea necesario.
+            this.proveedorTableAdapter.Fill(this.residenciaDataSet.Proveedor);
 
         }
     }

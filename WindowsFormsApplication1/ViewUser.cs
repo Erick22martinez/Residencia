@@ -23,5 +23,12 @@ namespace WindowsFormsApplication1
             saliraña.Show();
             this.Hide();
         }
+
+        private void ViewUser_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'residenciaDataSet1.Usuario' Puede moverla o quitarla según sea necesario.
+            this.usuarioTableAdapter.Fill(this.residenciaDataSet1.Usuario);
+
+        }
     }
 }
