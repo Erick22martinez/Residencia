@@ -19,9 +19,7 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MenuPrincipal salid = new MenuPrincipal();
-            salid.Show();
-            this.Hide();
+            
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -31,6 +29,7 @@ namespace WindowsFormsApplication1
 
         private void Almsalidas_Load(object sender, EventArgs e)
         {
+            
             
         }
 

@@ -23,5 +23,21 @@ namespace WindowsFormsApplication1
             Conn.Close();
             return result;
         }
+
+        public static int Eliminar(string idclave)
+        {
+            int retorno = 0;
+
+            SqlConnection con = new SqlConnection("Data Source=(localdb)\\v11.0;Initial Catalog=Residencia;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+
+            con.Open();
+
+            SqlCommand comm = new SqlCommand(string.Format("Delete From Inventario where codigousuario={0}", idclave), con);
+
+            retorno = comm.ExecuteNonQuery();
+            con.Close();
+
+            return retorno;
+        }
     }
 }

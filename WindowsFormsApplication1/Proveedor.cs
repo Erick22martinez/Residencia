@@ -39,14 +39,14 @@ namespace WindowsFormsApplication1
             return retorno;
         }
 
-        public static int update(string idsclave)
+        public static int update(string idsclave, string nombre,string calle, string numero, string colonia, string municipio, string cp, string estado, string telefono, string movil, string rfc, string contacto)
         {
             int result = 0;
             SqlConnection Conn = new SqlConnection("Data Source=(localdb)\\v11.0;Initial Catalog=Residencia;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
 
             Conn.Open();//clave,Nombre,Calle,Numero,Colonia,Municipio,CP,Estado,Telefono,Movil,RFC,Contacto
 
-            SqlCommand com = new SqlCommand(string.Format("Update Proveedor set Nombre='{0}', Calle='{1}',Numero='{2}',Colonia='{3}',Municipio='{4}',CP='{5}',Estado='{6}',Telefono='{7}',Movil='{8}',RFC='{9}',Contacto='{10}', where clave={11}",idsclave), Conn);
+            SqlCommand com = new SqlCommand(string.Format("Update Proveedor set Nombre='{1}', Calle='{2}', Numero='{3}',Colonia='{4}',Municipio='{5}',CP='{6}',Estado='{7}',Telefono='{8}',Movil='{9}',RFC='{10}',Contacto='{11}'  where clave={0}", idsclave, nombre, calle, numero, colonia, municipio, cp, estado, telefono, movil, rfc, contacto), Conn);
 
             result = com.ExecuteNonQuery();
             Conn.Close();

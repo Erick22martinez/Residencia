@@ -39,10 +39,8 @@ namespace WindowsFormsApplication1
               if (MessageBox.Show("Desea eliminar al Proveedor", "Esta Seguro?", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
               {
 
-
                   string pos = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                   
-                  //string poss = Convert.ToString(pos);
 
                   if (Proveedor.Eliminar(pos) > 0)
                
@@ -59,11 +57,7 @@ namespace WindowsFormsApplication1
                   MessageBox.Show("Se cancelo la eliminacion","Eliminacion cancelada", MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
               }
           }
-        }
-
-      
-        
-        
+        }   
     }
     
 }

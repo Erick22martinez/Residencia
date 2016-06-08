@@ -30,19 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.residenciaDataSet1 = new WindowsFormsApplication1.ResidenciaDataSet1();
-            this.residenciaDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usuarioTableAdapter = new WindowsFormsApplication1.ResidenciaDataSet1TableAdapters.UsuarioTableAdapter();
             this.codigousuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Editar_Prov = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.residenciaDataSet1 = new WindowsFormsApplication1.ResidenciaDataSet1();
+            this.button1 = new System.Windows.Forms.Button();
+            this.residenciaDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usuarioTableAdapter = new WindowsFormsApplication1.ResidenciaDataSet1TableAdapters.UsuarioTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.residenciaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.residenciaDataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView2
@@ -59,35 +59,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(415, 145);
             this.dataGridView2.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(341, 151);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // residenciaDataSet1
-            // 
-            this.residenciaDataSet1.DataSetName = "ResidenciaDataSet1";
-            this.residenciaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // residenciaDataSet1BindingSource
-            // 
-            this.residenciaDataSet1BindingSource.DataSource = this.residenciaDataSet1;
-            this.residenciaDataSet1BindingSource.Position = 0;
-            // 
-            // usuarioBindingSource
-            // 
-            this.usuarioBindingSource.DataMember = "Usuario";
-            this.usuarioBindingSource.DataSource = this.residenciaDataSet1;
-            // 
-            // usuarioTableAdapter
-            // 
-            this.usuarioTableAdapter.ClearBeforeFill = true;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // codigousuarioDataGridViewTextBoxColumn
             // 
@@ -117,6 +89,35 @@
             this.Editar_Prov.UseColumnTextForButtonValue = true;
             this.Editar_Prov.Width = 70;
             // 
+            // usuarioBindingSource
+            // 
+            this.usuarioBindingSource.DataMember = "Usuario";
+            this.usuarioBindingSource.DataSource = this.residenciaDataSet1;
+            // 
+            // residenciaDataSet1
+            // 
+            this.residenciaDataSet1.DataSetName = "ResidenciaDataSet1";
+            this.residenciaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(341, 151);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // residenciaDataSet1BindingSource
+            // 
+            this.residenciaDataSet1BindingSource.DataSource = this.residenciaDataSet1;
+            this.residenciaDataSet1BindingSource.Position = 0;
+            // 
+            // usuarioTableAdapter
+            // 
+            this.usuarioTableAdapter.ClearBeforeFill = true;
+            // 
             // DeleteUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -128,9 +129,9 @@
             this.Text = "DeleteUser";
             this.Load += new System.EventHandler(this.DeleteUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.residenciaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.residenciaDataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

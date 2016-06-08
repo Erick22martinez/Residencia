@@ -26,14 +26,26 @@ namespace WindowsFormsApplication1
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string pos = dataGridView1.Columns[e.ColumnIndex].HeaderText;
+            
 
             if (dataGridView1.CurrentCell.ColumnIndex == 12)
             {
                 if (MessageBox.Show("Desea editar al Proveedor", "Esta Seguro?", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
+                    string pos = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                    string pos1 = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                    string pos2 = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                    string pos3 = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                    string pos4 = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                    string pos5 = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                    string pos6 = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+                    string pos7 = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+                    string pos8 = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+                    string pos9 = dataGridView1.CurrentRow.Cells[9].Value.ToString();
+                    string pos10 = dataGridView1.CurrentRow.Cells[10].Value.ToString();
+                    string pos11 = dataGridView1.CurrentRow.Cells[11].Value.ToString();
 
-                    if (Proveedor.update(pos) > 0)
+                    if (Proveedor.update(pos,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11) > 0)
                     {
                         MessageBox.Show("Proveedor Agregado");
                     }

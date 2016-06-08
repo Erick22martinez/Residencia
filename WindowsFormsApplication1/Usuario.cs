@@ -23,6 +23,36 @@ namespace WindowsFormsApplication1
             return resultado;
         }
 
+        public static int Eliminar(string idclave)
+        {
+            int retorno = 0;
+
+            SqlConnection con = new SqlConnection("Data Source=(localdb)\\v11.0;Initial Catalog=Residencia;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+
+            con.Open();
+
+            SqlCommand comm = new SqlCommand(string.Format("Delete From Usuario where codigousuario={0}", idclave), con);
+
+            retorno = comm.ExecuteNonQuery();
+            con.Close();
+
+            return retorno;
+        }
+
+        public static int update(string idsclave, string nombre, string apellido, string usuario, string correo, string contraseña)
+        {
+            int result = 0;
+            SqlConnection Conn = new SqlConnection("Data Source=(localdb)\\v11.0;Initial Catalog=Residencia;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+
+            Conn.Open();
+
+            SqlCommand com = new SqlCommand(string.Format("Update Usuario set Nombre='{1}',Apellido='{2}',usuario='{3}',correo='{4}',contraseña='{5}'  where codigousuario={0}", idsclave,nombre,apellido,usuario,correo,contraseña), Conn);
+
+            result = com.ExecuteNonQuery();
+            Conn.Close();
+            return result;
+        }
+
        
     }
 }

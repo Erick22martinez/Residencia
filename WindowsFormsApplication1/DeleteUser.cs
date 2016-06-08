@@ -30,5 +30,35 @@ namespace WindowsFormsApplication1
             this.usuarioTableAdapter.Fill(this.residenciaDataSet1.Usuario);
 
         }
-    }
-}
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(dataGridView2.CurrentCell.ColumnIndex==3)
+          {
+              if (MessageBox.Show("Desea eliminar al Usuario", "Esta Seguro?", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+              {
+
+
+                  string pos = dataGridView2.CurrentRow.Cells[0].Value.ToString();
+                  
+                  //string poss = Convert.ToString(pos);
+
+                  if (Usuario.Eliminar(pos) > 0)
+               
+                  {
+                      MessageBox.Show("Usuario Eliminado", "Usuario Eliminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                  }
+                  else
+                  {
+                      MessageBox.Show("No se pudo Eliminar el Usuario", "Usuario no Eliminado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                  }
+              }
+              else 
+              {
+                  MessageBox.Show("Se cancelo la eliminacion","Eliminacion cancelada", MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+              }
+          }
+        }
+      }
+   }
+
